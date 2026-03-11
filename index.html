@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deepakshi's Student Portfolio - Showcasing academic projects, skills, and achievements in Cyber Security & Forensic Science">
+    <title>Deepakshi | Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particles Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>D<span class="logo-dot">.</span>S<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-aos="fade-up">Hello, I'm</p>
+                <h1 class="hero-name" data-aos="fade-up" data-delay="100">
+                    <span class="name-line">Deepakshi</span>
+                    <span class="name-accent">Sharma</span>
+                </h1>
+                <div class="hero-typewriter" data-aos="fade-up" data-delay="200">
+                    <span class="typewriter-label">I'm a&nbsp;</span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description" data-aos="fade-up" data-delay="300">
+                    Passionate student specializing in <strong>Cyber Security & Forensic Science</strong>, 
+                    dedicated to building secure digital solutions and uncovering digital evidence.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-delay="400">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-socials" data-aos="fade-up" data-delay="500">
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-delay="300">
+                <div class="hero-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <div class="avatar-inner">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                    <div class="orbit-dot dot-1"><i class="fas fa-shield-halved"></i></div>
+                    <div class="orbit-dot dot-2"><i class="fas fa-code"></i></div>
+                    <div class="orbit-dot dot-3"><i class="fas fa-fingerprint"></i></div>
+                    <div class="orbit-dot dot-4"><i class="fas fa-lock"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Know Who <span class="gradient-text">I Am</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="about-img-border"></div>
+                        <div class="about-experience-badge">
+                            <span class="exp-number">3+</span>
+                            <span class="exp-text">Years Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h3 class="about-subtitle">A Passionate Learner & Future Cybersecurity Professional</h3>
+                    <p class="about-text">
+                        I'm a dedicated student pursuing my degree in <strong>Cyber Security & Forensic Science</strong>. 
+                        My journey in technology began with curiosity about how systems work and evolved into a passion 
+                        for protecting them.
+                    </p>
+                    <p class="about-text">
+                        I love exploring vulnerability assessment, digital forensics, and building secure applications. 
+                        Beyond academics, I actively participate in CTF competitions and contribute to open-source 
+                        security tools.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="8">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Hackathons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Awards Won</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <span>Download Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-cogs"></i> My Skills</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="technical">Technical Skills</button>
+                <button class="tab-btn" data-tab="tools">Tools & Software</button>
+                <button class="tab-btn" data-tab="soft">Soft Skills</button>
+            </div>
+            <div class="skills-content">
+                <div class="tab-panel active" id="technical">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="fade-up" data-delay="0">
+                            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                            <h4>Network Security</h4>
+                            <div class="skill-bar"><div class="skill-fill" data-percent="85"></div></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-delay="50">
+                            <div class="skill-icon"><i class="fas fa-bug"></i></div>
+                            <h4>Vulnerability Assessment</h4>
+                            <div class="skill-bar"><div class="skill-fill" data-percent="80"></div></div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-delay="100">
+                            <div class="skill-icon"><i class="fas fa-search"></i></div>
+                            <h4>Digital Forensics</h4>
+                            <div class="skill-bar"><div class="skill-fill" data-percent="75"></div></div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-delay="150">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                            <div class="skill-bar"><div class="skill-fill" data-percent="90"></div></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-delay="200">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <h4>Linux Administration</h4>
+                            <div class="skill-bar"><div class="skill-fill" data-percent="78"></div></div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-delay="250">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <h4>Web Development</h4>
+                            <div class="skill-bar"><div class="skill-fill" data-percent="82"></div></div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tools">
+                    <div class="tools-grid">
+                        <div class="tool-item" data-aos="zoom-in"><i class="fas fa-dragon"></i><span>Kali Linux</span></div>
+                        <div class="tool-item" data-aos="zoom-in"><i class="fas fa-crosshairs"></i><span>Wireshark</span></div>
+                        <div class="tool-item" data-aos="zoom-in"><i class="fas fa-spider"></i><span>Burp Suite</span></div>
+                        <div class="tool-item" data-aos="zoom-in"><i class="fas fa-map"></i><span>Nmap</span></div>
+                        <div class="tool-item" data-aos="zoom-in"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="tool-item" data-aos="zoom-in"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="tool-item" data-aos="zoom-in"><i class="fab fa-docker"></i><span>Docker</span></div>
+                        <div class="tool-item" data-aos="zoom-in"><i class="fas fa-shield-virus"></i><span>Metasploit</span></div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="soft">
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill" data-aos="fade-up"><div class="soft-icon">🧠</div><h4>Problem Solving</h4><p>Analytical thinking and creative solutions</p></div>
+                        <div class="soft-skill" data-aos="fade-up"><div class="soft-icon">🤝</div><h4>Team Collaboration</h4><p>Effective communication in diverse teams</p></div>
+                        <div class="soft-skill" data-aos="fade-up"><div class="soft-icon">📚</div><h4>Continuous Learning</h4><p>Always staying updated with latest trends</p></div>
+                        <div class="soft-skill" data-aos="fade-up"><div class="soft-icon">⏰</div><h4>Time Management</h4><p>Efficient prioritization and delivery</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-project-diagram"></i> My Projects</span>
+                <h2 class="section-title">Academic <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="forensics">Forensics</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="security" data-aos="fade-up">
+                    <div class="project-image"><div class="project-img-placeholder" style="--accent: #00d4ff"><i class="fas fa-shield-halved"></i></div><div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+                    <div class="project-info"><div class="project-tags"><span>Python</span><span>Security</span></div><h3>Network Intrusion Detection System</h3><p>Built an ML-based NIDS that detects anomalous network traffic patterns using Random Forest and deep packet inspection.</p></div>
+                </div>
+                <div class="project-card" data-category="forensics" data-aos="fade-up" data-delay="100">
+                    <div class="project-image"><div class="project-img-placeholder" style="--accent: #a855f7"><i class="fas fa-fingerprint"></i></div><div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+                    <div class="project-info"><div class="project-tags"><span>Forensics</span><span>Python</span></div><h3>Digital Evidence Analyzer</h3><p>A comprehensive toolkit for analyzing digital evidence from storage devices, recovering deleted files, and generating forensic reports.</p></div>
+                </div>
+                <div class="project-card" data-category="security" data-aos="fade-up" data-delay="200">
+                    <div class="project-image"><div class="project-img-placeholder" style="--accent: #f43f5e"><i class="fas fa-lock"></i></div><div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+                    <div class="project-info"><div class="project-tags"><span>Encryption</span><span>Java</span></div><h3>Secure File Encryption Tool</h3><p>End-to-end file encryption application using AES-256 with secure key management and password-based authentication.</p></div>
+                </div>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-delay="100">
+                    <div class="project-image"><div class="project-img-placeholder" style="--accent: #10b981"><i class="fas fa-globe"></i></div><div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+                    <div class="project-info"><div class="project-tags"><span>HTML/CSS</span><span>JavaScript</span></div><h3>Phishing Detection Extension</h3><p>Browser extension that detects phishing URLs in real-time using ML classification and warns users before visiting malicious sites.</p></div>
+                </div>
+                <div class="project-card" data-category="forensics" data-aos="fade-up" data-delay="200">
+                    <div class="project-image"><div class="project-img-placeholder" style="--accent: #f59e0b"><i class="fas fa-database"></i></div><div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+                    <div class="project-info"><div class="project-tags"><span>SQL</span><span>Python</span></div><h3>Log Analysis Framework</h3><p>Automated log analysis system that parses server logs, identifies suspicious activities, and generates security incident reports.</p></div>
+                </div>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-delay="300">
+                    <div class="project-image"><div class="project-img-placeholder" style="--accent: #6366f1"><i class="fas fa-chart-line"></i></div><div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+                    <div class="project-info"><div class="project-tags"><span>React</span><span>Node.js</span></div><h3>Security Dashboard</h3><p>Real-time security monitoring dashboard displaying vulnerability metrics, threat feeds, and system health indicators.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Achievements</span>
+                <h2 class="section-title">Awards & <span class="gradient-text">Certifications</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="timeline" data-aos="fade-up">
+                    <h3 class="timeline-title"><i class="fas fa-medal"></i> Awards & Honours</h3>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>1st Place - National CTF Competition</h4><p>Led a team of 4 to victory in the national-level Capture The Flag cybersecurity competition.</p><span class="timeline-date">2025</span></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>Best Research Paper Award</h4><p>Published and presented research on AI-driven malware detection at the International Security Conference.</p><span class="timeline-date">2024</span></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>Dean's List - Academic Excellence</h4><p>Maintained a GPA of 9.2/10 and recognized for outstanding academic performance.</p><span class="timeline-date">2023-2025</span></div></div>
+                </div>
+                <div class="certifications" data-aos="fade-up" data-delay="100">
+                    <h3 class="timeline-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-card"><div class="cert-icon"><i class="fas fa-shield-halved"></i></div><h4>CompTIA Security+</h4><p>Verified credentials in network security and risk management</p></div>
+                        <div class="cert-card"><div class="cert-icon"><i class="fas fa-user-secret"></i></div><h4>CEH - Certified Ethical Hacker</h4><p>Expertise in penetration testing and vulnerability assessment</p></div>
+                        <div class="cert-card"><div class="cert-icon"><i class="fab fa-google"></i></div><h4>Google Cybersecurity Certificate</h4><p>Professional certificate in cybersecurity fundamentals</p></div>
+                        <div class="cert-card"><div class="cert-icon"><i class="fab fa-aws"></i></div><h4>AWS Cloud Practitioner</h4><p>Cloud computing concepts and AWS services</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new projects, internship opportunities, or collaboration ideas.</p>
+                    <div class="contact-details">
+                        <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p>deepakshi@example.com</p></div></div>
+                        <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><p>New Delhi, India</p></div></div>
+                        <div class="contact-item"><div class="contact-icon"><i class="fas fa-graduation-cap"></i></div><div><h4>University</h4><p>B.Tech Cyber Security & Forensics</p></div></div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <div class="form-group"><input type="text" id="name" placeholder="Your Name" required><label for="name">Your Name</label></div>
+                    <div class="form-group"><input type="email" id="email" placeholder="Your Email" required><label for="email">Your Email</label></div>
+                    <div class="form-group"><input type="text" id="subject" placeholder="Subject" required><label for="subject">Subject</label></div>
+                    <div class="form-group"><textarea id="message" rows="5" placeholder="Your Message" required></textarea><label for="message">Your Message</label></div>
+                    <button type="submit" class="btn btn-primary btn-full"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><span class="logo-bracket">&lt;</span>D<span class="logo-dot">.</span>S<span class="logo-bracket">/&gt;</span></div>
+                <p class="footer-text">Designed & Built by Deepakshi Sharma &copy; 2026</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
